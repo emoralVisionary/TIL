@@ -1,6 +1,6 @@
 # Do not use 'is' to compare integers
 
-```pyth
+```python
 a = 256
 b = 256
 a is b
@@ -30,7 +30,7 @@ a is b
 
 같은 객체일 때만 _True_ 를 리턴한다고 한다! 즉,  **_'is'_** 를 통한 비교는 본질적으로 `id(var)` 의 결과를 비교하는 것과 동일하다.  `id(var)` : 변수의 고유 _Identity_ 값 (메모리 주소) 을 리턴한다. 
 
-```pyth
+```python
 a is b
 id(a) == id(b)
 ```
