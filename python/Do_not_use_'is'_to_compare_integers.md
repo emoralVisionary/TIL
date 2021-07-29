@@ -20,7 +20,7 @@ a is b
 >
 > The current implementation keeps an array of integer objects for all integers between -5 and 256, when you create an int in that range you actually just get back a reference to the existing object. So it should be possible to change the value of 1. I suspect the behaviour of Python in this case is undefined.
 
-정리하자면, 파이썬은 우리가 자주 사용하는 범위의 정수들에 대해서는 이미 integer object 들을 정의해놓고 있다. 따라서 assign 한 정수의 값에 따라 **'is'** 로 비교했을 때 _True_ 가 리턴될 때도 있고, _False_ 가 리턴될 때도 있는 것. 위의 글에서는 그 범위가 [-5, 256] 이라고 언급되어있지만, 범위 자체는 환경에 따라 달라질 수 있는 듯 하다. 
+정리하자면, 파이썬은 우리가 자주 사용하는 범위의 정수들에 대해서는 이미 integer object 들을 정의해놓고 있다. 따라서 assign 한 정수의 값에 따라 **'is'** 로 비교했을 때 _True_ 가 리턴될 때도 있고, _False_ 가 리턴될 때도 있는 것. **이미 정의되어있는 (사전에 책상 위에 놓여 있는) 정수의 범위는 [-5, 256] 이다.**
 
 
 
@@ -44,4 +44,3 @@ id(a) == id(b)
 _**참고 자료**_: <https://stackoverflow.com/questions/306313/is-operator-behaves-unexpectedly-with-integers>
 
 __*__ __객체, OOP 진도 나가고 나서 링크 참조해서 내용 보충할 것! __  
-
